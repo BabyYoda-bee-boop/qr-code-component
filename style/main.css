@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Outfit";
+  font-size: 0.938rem;
+  text-align: center;
+  color: hsl(216, 15%, 48%);
+  line-height: 1.4;
+  background-color: hsl(212, 45%, 89%);
+}
+body .container {
+  width: 90%;
+  max-width: 60em;
+  margin-inline: auto;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  padding: 16px 16px 40px;
+  border-radius: 1.25em;
+  margin-inline: auto;
+  max-width: 320px;
+  margin-block: 24px;
+}
+.card img {
+  margin-inline: auto;
+  border-radius: 0.625em;
+}
+.card .card__text {
+  padding-inline: 16px;
+}
+.card .card__text .card__text--title {
+  color: hsl(218, 44%, 22%);
+  line-height: 1.2;
+  padding-block: 24px 16px;
+}
+
+/*# sourceMappingURL=main.css.map */
