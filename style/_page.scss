@@ -11,8 +11,13 @@ img {
   max-width: 100%;
   display: block;
 }
+.flex {
+  display: flex;
+}
 
 body {
+  flex-direction: column;
+  min-height: 100vh;
   font-family: v.$ff-primary;
   font-size: v.$fs-300;
   text-align: center;
@@ -21,6 +26,9 @@ body {
   background-color: v.$clr-300;
 
   .container {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
     width: 90%;
     max-width: 60em;
     margin-inline: auto;
@@ -32,8 +40,7 @@ body {
   padding: v.$spacing-200 v.$spacing-200 v.$spacing-500;
   border-radius: v.$border-radius * 2;
   margin-inline: auto;
-  max-width: 320px;
-  margin-block: v.$spacing-300;
+  max-width: 20rem;
 
   img {
     margin-inline: auto;

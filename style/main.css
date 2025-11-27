@@ -12,8 +12,14 @@ img {
   display: block;
 }
 
+.flex {
+  display: flex;
+}
+
 body {
-  font-family: "Outfit";
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
   font-size: 0.938rem;
   text-align: center;
   color: hsl(216, 15%, 48%);
@@ -21,6 +27,9 @@ body {
   background-color: hsl(212, 45%, 89%);
 }
 body .container {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
   width: 90%;
   max-width: 60em;
   margin-inline: auto;
@@ -31,8 +40,7 @@ body .container {
   padding: 16px 16px 40px;
   border-radius: 1.25em;
   margin-inline: auto;
-  max-width: 320px;
-  margin-block: 24px;
+  max-width: 20rem;
 }
 .card img {
   margin-inline: auto;
